@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #41403f   ;
+}
+
+#root {
+    min-width: 99vw;
+    min-height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    padding: 0;
+    background-color: #EDB88B;
+    width: 65vw;
+    height: 85vh;
+    animation-name: box-shadow-move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: relative;
+    left: -10px;
+}
+
+@keyframes box-shadow-move {
+    0% {left: -10px;}
+    50% {left: 10px;}
+}
+
+#titleBar {
+    background-color: #333333;
+    height: 15%;
+}
+
+#titleBar h1 {
+    margin: 0;
+    padding: 5px;
+    font-size: 4rem;
+    color: #d3d6d6;
+}
+
+#container {
+    height: 85%;
+    display: flex;
+}
+
+#sideMenu {
+    background-color: #dddddd;
+    height: auto;
+    width: 25%;
+    border-right: solid 1px black;
+}
+
+#sideMenu ul {
+    list-style-type: none;
+}
+
+nav div {
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+nav div:hover {
+    color: #d3d6d6;
+    background-color: rgba(0, 0, 0, .7);
+    padding-left: 10%;
+}
+
+nav div i {
+    display:inline-block;
+    margin-right: 1em;
+    font-size: 1.3em;
+    position: relative;
+}
+
+nav div p {
+    display:inline-block;
+    font-size: 1.3em;
+    position: relative;
+}
+
+#sideMenu h2 {
+    width: 100%;
+    text-align: center;
+    background-color: rosybrown;
+    background-color: #333333;
+    color: #dddddd;
+}
+
+#sideContainer {
+    background-color: #eeeeee;
+    height: auto;
+    width: 75%;
+    overflow-y: auto;
+}
+
+#folderBar {
+    border-top: solid 1px black;
+    width: 100%;
+    text-align: center;
+    background-color: rosybrown;
+    background-color: #333333;
+    color: #dddddd;
+    display: flex;
+    justify-content: space-between;
+}
+#folderBar h2 {
+    padding-left: 2.5vw;
+}
+#folderBar button {
+    background: none;
+    border: none;
+    color: #dddddd;
+    cursor: pointer;
+    padding-right: 2.5vw;
+    font-size: 1rem;
+}
+
+.task {
+    margin: 1vh auto 1vh auto;
+    /*background-color: rgba(0, 0, 0, 0.034);
+    border: solid black 1px;*/
+    width: 90%;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task:hover {
+    border-radius:5%;
+    background-color: rgba(0, 0, 0, 0.034);
+}
+
+.taskEnd {
+    user-select: none;
+}
+
+.taskEnd:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.taskName { 
+    display:flex;
+}
+
+.taskDate {
+    display: block;
+    float: right;
+}
+
+.task p {
+    padding-left: 5px;
+}
+
+.newTask {
+    margin: 1vh auto 1vh auto;
+    /*background-color: rgba(0, 0, 0, 0.034);
+    border: solid black 1px;*/
+    width: 90%;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+}
