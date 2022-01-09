@@ -8,7 +8,7 @@ export default class StorageManager {
     }
 
     initialize = () => {
-        if (localStorage.length === 0) {
+        if (localStorage.folders === undefined) {
             let folders = {
                 Inbox : inboxFolder
             };

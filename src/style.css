@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #41403f   ;
+    background-color: #96ADC8   ;
 }
 
 #root {
@@ -24,6 +24,7 @@ body {
     animation-iteration-count: infinite;
     position: relative;
     left: -10px;
+    border: solid 2.5px black;
 }
 
 @keyframes box-shadow-move {
@@ -33,14 +34,17 @@ body {
 
 #titleBar {
     background-color: #333333;
+    background-color: rgba(216, 157, 106, .75);
     height: 15%;
+    
 }
 
 #titleBar h1 {
     margin: 0;
-    padding: 5px;
+    padding: 15px;
     font-size: 4rem;
-    color: #d3d6d6;
+    background-color: rgba(252, 255, 108, .1);
+    
 }
 
 #container {
@@ -50,9 +54,12 @@ body {
 
 #sideMenu {
     background-color: #dddddd;
+    background-color: #FCFF6C;
     height: auto;
     width: 25%;
+    border-top: solid 1px black;
     border-right: solid 1px black;
+    
 }
 
 #sideMenu ul {
@@ -60,6 +67,7 @@ body {
 }
 
 nav div {
+    font-size: 1.8rem;
     text-align: center;
     cursor: pointer;
     display: flex;
@@ -76,26 +84,26 @@ nav div:hover {
 nav div i {
     display:inline-block;
     margin-right: 1em;
-    font-size: 1.3em;
     position: relative;
 }
 
 nav div p {
     display:inline-block;
-    font-size: 1.3em;
     position: relative;
 }
 
 #sideMenu h2 {
+    font-size: 2rem;
     width: 100%;
     text-align: center;
     background-color: rosybrown;
-    background-color: #333333;
-    color: #dddddd;
+    background-color: rgba(216, 157, 106, .75);
+    
 }
 
 #sideContainer {
     background-color: #eeeeee;
+    background-color: #D7FFAB;
     height: auto;
     width: 75%;
     overflow-y: auto;
@@ -107,12 +115,14 @@ nav div p {
     text-align: center;
     background-color: rosybrown;
     background-color: #333333;
-    color: #dddddd;
     display: flex;
     justify-content: space-between;
+    background-color: rgba(216, 157, 106, .75);
+    border-bottom: solid 1px black;
 }
 #folderBar h2 {
     padding-left: 2.5vw;
+    font-size: 2rem;
 }
 #folderBar button {
     background: none;
