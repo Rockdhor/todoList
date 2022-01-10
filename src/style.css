@@ -1,5 +1,9 @@
+/* roboto-regular - latin */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
 * {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -25,6 +29,9 @@ body {
     position: relative;
     left: -10px;
     border: solid 2.5px black;
+    box-shadow: 5px 5px 20px black;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d477e123-2663-4944-bc38-0b919617bbb0/d6toae7-14fda379-dd61-4e9d-8260-fdba89bab91d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Q0NzdlMTIzLTI2NjMtNDk0NC1iYzM4LTBiOTE5NjE3YmJiMFwvZDZ0b2FlNy0xNGZkYTM3OS1kZDYxLTRlOWQtODI2MC1mZGJhODliYWI5MWQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.hDsnshOtj10dbkiJvp_u0BTnKaWXSOMEkD1kEDsvFAM");
+    background-size: cover;
 }
 
 @keyframes box-shadow-move {
@@ -34,16 +41,16 @@ body {
 
 #titleBar {
     background-color: #333333;
-    background-color: rgba(216, 157, 106, .75);
+    background-color: #493657;
     height: 15%;
     
 }
 
 #titleBar h1 {
     margin: 0;
-    padding: 15px;
+    padding-left: 15px;
     font-size: 4rem;
-    background-color: rgba(252, 255, 108, .1);
+    color: white;
     
 }
 
@@ -54,7 +61,7 @@ body {
 
 #sideMenu {
     background-color: #dddddd;
-    background-color: #FCFF6C;
+    background-color: #493657;
     height: auto;
     width: 25%;
     border-top: solid 1px black;
@@ -73,10 +80,11 @@ nav div {
     display: flex;
     align-items: center;
     user-select: none;
+    padding-left: 5%;
 }
 
 nav div:hover {
-    color: #d3d6d6;
+    color: white;
     background-color: rgba(0, 0, 0, .7);
     padding-left: 10%;
 }
@@ -97,13 +105,14 @@ nav div p {
     width: 100%;
     text-align: center;
     background-color: rosybrown;
-    background-color: rgba(216, 157, 106, .75);
+    background-color: rgba(255, 255, 255, 0.75);
     
 }
 
 #sideContainer {
     background-color: #eeeeee;
     background-color: #D7FFAB;
+    
     height: auto;
     width: 75%;
     overflow-y: auto;
@@ -117,8 +126,9 @@ nav div p {
     background-color: #333333;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(216, 157, 106, .75);
+    background-color: #6A5B6E;
     border-bottom: solid 1px black;
+    color:white;
 }
 #folderBar h2 {
     padding-left: 2.5vw;
@@ -178,4 +188,29 @@ nav div p {
     padding: 1px;
     display: flex;
     justify-content: space-between;
+}
+
+img {
+    position: fixed;
+    animation-name: mario-move;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    bottom: 5vh;
+    left: 0vw; 
+}
+
+@keyframes mario-move {
+    0% {left: -10vw;}
+    50% {
+        left: 100vw;
+        transform: rotateY(0deg);
+    }
+    50.1% {
+        left: 100vw;
+        transform: rotateY(180deg);
+    }
+    100% {
+        left: -10vw;
+        transform: rotateY(180deg);
+    }
 }
